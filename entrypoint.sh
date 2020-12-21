@@ -22,9 +22,6 @@ if [ -z "$AWS_REGION" ]; then
   exit 1
 fi
 
-# Default to invalidate the entire path if SOURCE_PATH not set.
-SOURCE_PATH=${SOURCE_PATH:-/*}
-
 # Create a dedicated profile for this action to avoid
 # conflicts with other actions.
 # https://github.com/jakejarvis/s3-sync-action/issues/1
