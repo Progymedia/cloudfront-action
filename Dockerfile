@@ -1,2 +1,2 @@
-FROM awact/cloudfront-action
+FROM amazon/aws-cli
 ENTRYPOINT ["/entrypoint.sh"]
